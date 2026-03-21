@@ -101,6 +101,7 @@ PublicDependencyModuleNames.AddRange(new string[]
             { 
                 "LevelSequenceEditor", "Sequencer", "MovieSceneTools", "Niagara", "NiagaraEditor", "UnrealEd",
                 "WorldPartitionEditor", "DataLayerEditor", "EnhancedInput", "InputEditor",
+                "PCG", "PCGEditor",
                 // Required for linking symbols used in handlers (already in base: AIModule, Landscape, Engine)
                 "BehaviorTreeEditor",  // UBehaviorTreeGraphNode classes
                 "MaterialEditor"  // UMaterialExpressionRotator and other material expressions

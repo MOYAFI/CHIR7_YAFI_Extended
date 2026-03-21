@@ -827,6 +827,19 @@ namespace McpHandlers
     // =========================================================================
     // AI Handlers
     // =========================================================================
+    // =========================================================================
+    // PCG Handlers
+    // =========================================================================
+    namespace PCG
+    {
+        MCP_DECLARE_HANDLER_CUSTOM(PCGAction, (
+            const FString& RequestId,
+            const FString& Action,
+            const TSharedPtr<FJsonObject>& Payload,
+            TSharedPtr<FMcpBridgeWebSocket> Socket
+        ));
+    }
+
     namespace AI
     {
         MCP_DECLARE_HANDLER_CUSTOM(AIAction, (

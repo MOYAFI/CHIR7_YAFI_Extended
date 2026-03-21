@@ -1129,6 +1129,13 @@ void UMcpAutomationBridgeSubsystem::InitializeHandlers() {
                   });
 
   // PIE State Handler - for checking Play-In-Editor state
+  RegisterHandler(TEXT("manage_pcg"),
+                  [this](const FString &R, const FString &A,
+                         const TSharedPtr<FJsonObject> &P,
+                         TSharedPtr<FMcpBridgeWebSocket> S) {
+                    return McpHandlers::PCG::PCGAction(R, A, P, S);
+                  });
+
   RegisterHandler(TEXT("check_pie_state"),
                   [this](const FString &R, const FString &A,
                          const TSharedPtr<FJsonObject> &P,

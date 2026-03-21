@@ -25,6 +25,11 @@
   ],
   "Plugins": [
     {
+      "Name": "PCG",
+      "Enabled": true,
+      "Optional": true
+    },
+    {
       "Name": "EditorScriptingUtilities",
       "Enabled": true
     },
