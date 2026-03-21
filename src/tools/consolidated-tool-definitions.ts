@@ -4700,6 +4700,6 @@ export const consolidatedToolDefinitions: ToolDefinition[] = [
         error: commonSchemas.stringProp
       }
     }
-  }
+  } ,
     pcgToolDefinition,
 ];
