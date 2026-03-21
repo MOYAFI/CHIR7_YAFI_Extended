@@ -7,6 +7,7 @@ export interface ToolDefinition {
   [key: string]: unknown;
 }
 import { commonSchemas } from './tool-definition-utils.js';
+import {   pcgToolDefinition, } from "./pcg.js";
 export const consolidatedToolDefinitions: ToolDefinition[] = [
   {
     name: 'manage_pipeline',
@@ -4700,4 +4701,5 @@ export const consolidatedToolDefinitions: ToolDefinition[] = [
       }
     }
   }
+    pcgToolDefinition,
 ];
